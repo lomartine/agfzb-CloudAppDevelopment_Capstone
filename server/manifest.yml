@@ -1,11 +1,11 @@
   applications:
-  - name: djangoapp
+  - name: meaningful
     routes:
-      - route: $HOST.$DOMAIN
+      - route: meaningfulapp.mybluemix.net
     memory: 128M
     buildpack: python_buildpack
-  - name: djangoapp-nginx
+  - name: meaningful-nginx
     routes:
-      - route: $HOST.$DOMAIN/static
+      - route: meaningfulapp.mybluemix.net/static
     memory: 128M
     buildpack: staticfile_buildpack
